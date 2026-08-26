@@ -111,8 +111,8 @@ class PerformanceMetric:
             )
         except:
             text = f"[PM] not initialized: ({self.code}), agent {self.agent_id}"
-        finally: 
-            return text
+
+        return text
     
     def update(self, price_update_only=False):
         if not self.initialized: 
